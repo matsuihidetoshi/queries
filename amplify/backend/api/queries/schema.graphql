@@ -1,0 +1,10 @@
+type Conformation
+  @model 
+  @auth(rules: [
+      {allow: private},
+    ])
+{
+  id: ID!
+  answer: Int!
+  token: String!
+}
